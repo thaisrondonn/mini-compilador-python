@@ -1,5 +1,5 @@
 # Mini Compilador em Python  
-Este repositório contém um mini compilador simples desenvolvido em Python, utilizando os conceitos apresentados no artigo **"Compiladores e sua Relação com Linguagens Formais"**.
+Este repositório contém um mini compilador simples desenvolvido em Python, utilizando os conceitos apresentados no artigo **"Compiladores e sua Relação com Linguagens Formais e Autômatos"**.
 
 O compilador possui duas etapas principais:
 
