@@ -7,6 +7,7 @@ TOKEN_REGEX = [
     ("SPACE", r"[ \t]+"),  # ignorar espaços
 ]
 
+
 def lexer(texto):
     tokens = []
     i = 0
@@ -16,11 +17,17 @@ def lexer(texto):
             regex = re.compile(pattern)
             match = regex.match(texto, i)
             if match:
-                lexema = match.group(0)
+                lexema = match.group()
                 if token_type != "SPACE":
                     tokens.append((token_type, lexema))
-                i = match.end(0)
+                i = match.end()
                 break
+
         if not match:
-            raise ValueError(f"Símbolo inválido na posição {i}: {texto[i]}")
+            raise ValueError(f"Token inválido em '{texto[i:]}'")
+
     return tokens
+
+
+if __name__ == "__main__":
+    print(lexer("12+34 + 5"))
