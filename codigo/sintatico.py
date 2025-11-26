@@ -1,16 +1,25 @@
-# Expressão esperada: NUM PLUS NUM
+from lexico import lexer
 
 def parser(tokens):
     if len(tokens) != 3:
-        raise ValueError("Expressão inválida.")
+        return "Erro sintático: expressão deve ter NUM + NUM"
 
     if tokens[0][0] != "NUM":
-        raise ValueError("A expressão deve começar com um número.")
+        return "Erro sintático: expressão deve começar com número"
 
     if tokens[1][0] != "PLUS":
-        raise ValueError("Falta o operador '+'.")
+        return "Erro sintático: operador inválido (esperado '+')"
 
     if tokens[2][0] != "NUM":
-        raise ValueError("A expressão deve terminar com um número.")
+        return "Erro sintático: expressão deve terminar com número"
 
     return "Expressão sintaticamente válida!"
+
+
+if __name__ == "__main__":
+    texto = input("Digite a expressão: ")
+    tokens = lexer(texto)
+    print("Tokens:", tokens)
+
+    resultado = parser(tokens)
+    print("Resultado do parser:", resultado)
