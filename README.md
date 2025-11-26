@@ -13,21 +13,6 @@ Este mini compilador interpreta expressões no formato:
 
 Exemplo válido: `23 + 7`
 
----
-
-## 📂 Estrutura do Projeto
-
-mini-compilador-python/
-│
-├── Artigo/
-│ └── Artigo - Compiladores e sua Relação com Linguagens Formais.pdf
-│
-└── codigo/
-├── lexico.py
-├── sintatico.py
-└── minicomilador.py
-
-
 
 ---
 
