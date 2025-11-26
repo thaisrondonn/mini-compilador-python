@@ -69,4 +69,3 @@ Tokens: [('NUM', '23'), ('PLUS', '+'), ('NUM', '7')]
 Parser: Expressão sintaticamente válida!
 
 
-/Artigo/Artigo - Compiladores e sua Relação com Linguagens Formais.pdf
