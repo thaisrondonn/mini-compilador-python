@@ -11,12 +11,6 @@ Também está incluso o artigo original em PDF.
 
 ---
 
-## 📂 Estrutura do Projeto
-
-Artigo - Compiladores e sua Relação com Linguagens Formais.pdf
-
----
-
 ## ▶️ Como executar
 
 Abra o terminal dentro da pasta `codigo/` e execute:
