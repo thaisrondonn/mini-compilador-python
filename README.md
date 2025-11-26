@@ -13,7 +13,7 @@ Também está incluso o artigo original em PDF.
 
 ## 📂 Estrutura do Projeto
 
-
+https://github.com/thaisrondonn/mini-compilador-python/blob/main/Artigo%20-%20Compiladores%20e%20sua%20Rela%C3%A7%C3%A3o%20com%20Linguagens%20Formais.pdf
 
 
 ---
