@@ -1,12 +1,36 @@
+# minicompilador.py
+
 from lexico import lexer
 from sintatico import parser
 
-codigo_fonte = "23 + 7"
+def interpretador(tokens):
+    """Executa NUM + NUM + NUM ..."""
+    resultado = int(tokens[0][1])  # primeiro número
 
-print("Código fonte:", codigo_fonte)
+    i = 1
+    while i < len(tokens):
+        op = tokens[i][1]          # '+'
+        num = int(tokens[i+1][1])  # número seguinte
 
-tokens = lexer(codigo_fonte)
-print("Tokens:", tokens)
+        if op == "+":
+            resultado += num
 
-resultado = parser(tokens)
-print("Parser:", resultado)
+        i += 2
+
+    return resultado
+
+if __name__ == "__main__":
+    exp = input("Digite expressão: ")
+
+    try:
+        tokens = lexer(exp)
+        print("Tokens:", tokens)
+
+        parser(tokens)
+        print("Expressão válida!")
+
+        res = interpretador(tokens)
+        print("Resultado:", res)
+
+    except Exception as e:
+        print("Erro:", e)
