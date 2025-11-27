@@ -24,7 +24,6 @@ Exemplo válido: `23 + 7`
   - `NUM` → números inteiros  
   - `PLUS` → símbolo `+`  
   - `SPACE` → espaços em branco (ignorados)
-- Gera uma lista de tokens, por exemplo:
 
 
 
